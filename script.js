@@ -51,7 +51,7 @@ document.addEventListener('DOMContentLoaded', function () {
       
         // Schedule hyperlinked messages
         scheduleMessage('https://telegram.com', 'telegram', 5000 + Math.random() * 2000);
-        scheduleMessage('https://twitter.com', 'twitter', 5000 + Math.random() * 2000);
+        scheduleMessage('https://twitter.com/OmeowgleOnSol', 'twitter', 5000 + Math.random() * 2000);
         scheduleMessage('https://pump.fun', 'pump.fun', 5000 + Math.random() * 2000);
       }
       
