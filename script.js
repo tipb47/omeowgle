@@ -50,7 +50,7 @@ document.addEventListener('DOMContentLoaded', function () {
         }
       
         // Schedule hyperlinked messages
-        scheduleMessage('http://omeowgle.net/', 'telegram', 5000 + Math.random() * 2000);
+        scheduleMessage('https://t.me/+M2RmpWO39Aw2ODlh', 'telegram', 5000 + Math.random() * 2000);
         scheduleMessage('https://twitter.com/OmeowgleOnSol', 'twitter', 5000 + Math.random() * 2000);
         scheduleMessage('https://pump.fun', 'pump.fun', 5000 + Math.random() * 2000);
       }
