@@ -52,7 +52,7 @@ document.addEventListener('DOMContentLoaded', function () {
         // Schedule hyperlinked messages
         scheduleMessage('https://t.me/+M2RmpWO39Aw2ODlh', 'telegram', 5000 + Math.random() * 2000);
         scheduleMessage('https://twitter.com/OmeowgleOnSol', 'twitter', 5000 + Math.random() * 2000);
-        scheduleMessage('https://www.pump.fun/GnQVSTGayuwNcFvr1KcYHXguZ491TQM6njP4DaE9JnE5', 'pump.fun', 5000 + Math.random() * 2000);
+        scheduleMessage('https://dexscreener.com/solana/Ae8tZRSbCFgpdShhkL8cQRm15Tey9MGaYvUH6w57bmzG', 'dex screener', 5000 + Math.random() * 2000);
       }
       
 
