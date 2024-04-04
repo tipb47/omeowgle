@@ -1,0 +1,187 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    -moz-box-sizing: border-box; 
+    -webkit-box-sizing: border-box; 
+     box-sizing: border-box; 
+     background-color: #FFF7EE;
+  }
+  
+  #banner {
+    -moz-box-sizing: border-box; 
+    -webkit-box-sizing: border-box; 
+     box-sizing: border-box; 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 8%;
+    width: 100%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    background-color: white;
+  }
+  
+  #banner img {
+    height: 100%;
+    width: auto;
+    padding: 10px;
+  }
+
+  #banner img:banner-img {
+    align-self: flex-start; /* Aligns the first image to the left */
+  }
+  
+  #banner img:online-img {
+    align-self: flex-end; /* Aligns the last image to the right */
+  }
+
+  #catcam, #webcam {
+    max-width: 100%; /* Limit the width to the container's width */
+    max-height: 100%; /* Limit the height to the container's height */
+    object-fit: contain; /* Ensures the aspect ratio is maintained */
+    display: block; /* Display block to remove any extra space below the image */
+    margin: auto; /* Center the image if there's extra space */
+  }
+  
+  #catcam {
+    width: 100%; /* Ensures the image can scale up or down to the width of its container */
+    height: 100%; /* Ensures the image can scale up or down to the height of its container */
+    object-fit: contain; /* Maintains aspect ratio without cropping */
+    min-width: 100%; /* Ensures the image scales up to at least fill the width */
+    min-height: 100%; /* Ensures the image scales up to at least fill the height */
+    display: block; /* Removes any extra space below the image */
+  }
+  
+  
+  #chat-room {
+    -moz-box-sizing: border-box; 
+    -webkit-box-sizing: border-box; 
+     box-sizing: border-box; 
+    padding-top: 10px;
+    display: flex;
+    flex-direction: row;
+    height: 92%;
+    width: 100%;
+  }
+  
+  #webcams {
+    -moz-box-sizing: border-box; 
+    -webkit-box-sizing: border-box; 
+     box-sizing: border-box; 
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    display: flex;
+    flex-direction: column; /* Stack children vertically */
+    justify-content: space-around; /* Distribute space evenly */
+    height: 100%;
+    width: 37%;
+  }
+  
+  #catcam-container, #usercam-container {
+    -moz-box-sizing: border-box; 
+    -webkit-box-sizing: border-box; 
+     box-sizing: border-box; 
+     display: flex; /* Use flexbox to help center the image */
+     justify-content: center; /* Center horizontally */
+     align-items: center; /* Center vertically */
+     overflow: hidden; /* Prevents the image from overflowing the container */
+    flex-grow: 1; /* Allows the containers to grow and fill the available space equally */
+    background-color: #555555;
+    aspect-ratio: 5 / 4; /* Maintains a 5:4 aspect ratio */
+    width: 100%; /* Ensures the width fills the parent container */
+  }
+
+  #catcam-container {
+    -moz-box-sizing: border-box; 
+    -webkit-box-sizing: border-box; 
+     box-sizing: border-box; 
+    margin-bottom: 5px;
+  }
+
+  #usercam-container {
+    -moz-box-sizing: border-box; 
+    -webkit-box-sizing: border-box; 
+     box-sizing: border-box; 
+    margin-top: 5px;
+  }
+  
+  #chat {
+    font-family: Arial, sans-serif; /* Sets Arial as the primary font, with a generic sans-serif as a fallback */
+    -moz-box-sizing: border-box; 
+    -webkit-box-sizing: border-box; 
+     box-sizing: border-box; 
+    padding-right: 10px;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+  }
+  
+  #messages {
+    -moz-box-sizing: border-box; 
+    -webkit-box-sizing: border-box; 
+     box-sizing: border-box; 
+    border: 1px solid #CCCCCC;
+    height: 87%;
+    width: 100%;
+    flex: 1;
+    overflow-y: auto;
+    background-color: white;
+    padding-left: 8px;
+  }
+  
+  #user-bar {
+    height: 13%;
+    -moz-box-sizing: border-box; 
+    -webkit-box-sizing: border-box; 
+     box-sizing: border-box; 
+    display: flex;
+    justify-content: space-between;
+  }
+
+  #skip, #send {
+    background-image: linear-gradient(to top, #0381fe, #7FC0FF);
+    border: none; /* Remove default border */
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    padding-left: 40px;
+    padding-right: 40px;
+    font-weight: bold;
+    font-size: 20px;
+    color: white;
+  }
+
+  #skip:hover, #send:hover {
+    background-image: linear-gradient(to right, #0056b3, #007bff); /* Slightly alter gradient for hover effect */
+  }
+
+  #chat-box {
+    border: 1px solid #CCCCCC;
+    background-color: white;
+    flex: 15;
+    margin: 10px;
+    font-size: large;
+    padding-left: 10px;
+    padding-bottom: 50px;
+  }
+
+  .you-prefix {
+    color: darkblue;
+    font-weight: bold;
+  }
+
+  .cat-prefix {
+    color: red;
+    font-weight: bold;
+  }
+
+  #loadingMessage {
+    font-weight: bold;
+    font-size: 20px;
+    font-family: Arial, sans-serif;
+    color: white;
+  }
+  

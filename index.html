@@ -1,0 +1,54 @@
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Omeowgle</title>
+  <meta name="author" content="">
+  <meta name="description" content="meow meow. meow.">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" href="/favicon.ico" type="image/x-icon">
+  <link href="style.css" rel="stylesheet">
+</head>
+
+<body>
+
+  <div id="banner">
+    <img id="banner-img" src="logos/banner.png" alt="Omeowgle">
+    <img id="talk-img" src="logos/talk.png" alt="Talk to cats!">
+    <img id="online-img" src="logos/online-now.png" alt="35,000+ cats online now">
+  </div>
+
+  <div id="chat-room">
+
+    <div id="webcams">
+        <div id="catcam-container">
+            <img id="catcam" src="" autoplay playsinline loop>
+            <div id="loadingMessage" style="display:none;"> <!-- The message will be hidden initially -->
+              <!-- Text will be set by the JavaScript code -->
+            </div>
+        </div>
+
+        <div id="usercam-container">
+            <video id="webcam" autoplay playsinline></video>
+        </div>
+
+    </div>
+
+    <div id="chat">
+
+        <div id="messages"></div>
+
+        <div id="user-bar">
+            <button id="skip">Skip</button>
+            <input type="text" id="chat-box">
+            <button id="send">Send</button>
+        </div>
+
+    </div>
+  </div>
+
+
+  <script src="script.js"></script>
+</body>
+
+</html>
