@@ -3,27 +3,6 @@ document.addEventListener('DOMContentLoaded', function () {
     var skipButton = document.getElementById('skip');
     var messagesContainer = document.getElementById('messages');
 
-    function addHyperlinkMessage(url, displayText) {
-        var messageElement = document.createElement('p');
-        var linkElement = document.createElement('a');
-        linkElement.href = url; // Set the hyperlink URL
-        linkElement.textContent = displayText; // Set the display text for the link
-        linkElement.target = "_blank"; // Open in a new tab/window
-      
-        // Create the prefix span and set its contents
-        var prefixSpan = document.createElement('span');
-        prefixSpan.className = "cat-prefix";
-        prefixSpan.textContent = "Cat: ";
-      
-        // Append the prefix span and the link element to the message element
-        messageElement.appendChild(prefixSpan);
-        messageElement.appendChild(linkElement);
-      
-        // Finally, append the message element to the container
-        messagesContainer.appendChild(messageElement);
-      }
-      
-
       var timeouts = []; // Array to hold timeout IDs
 
       function addWelcomeMessage() {
@@ -47,12 +26,7 @@ document.addEventListener('DOMContentLoaded', function () {
             addHyperlinkMessage(url, displayText);
           }, delay);
           timeouts.push(timeoutId); // Store the timeout ID
-        }
-      
-        // Schedule hyperlinked messages
-        scheduleMessage('https://t.me/+M2RmpWO39Aw2ODlh', 'telegram', 5000 + Math.random() * 2000);
-        scheduleMessage('https://twitter.com/OmeowgleOnSol', 'twitter', 5000 + Math.random() * 2000);
-        scheduleMessage('https://dexscreener.com/solana/Ae8tZRSbCFgpdShhkL8cQRm15Tey9MGaYvUH6w57bmzG', 'dex screener', 5000 + Math.random() * 2000);
+        
       }
       
 
